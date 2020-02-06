@@ -2,8 +2,6 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="sec"
-	uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,14 +18,13 @@
 		 <img class="logoimg"
 			src='<spring:url value="images/qintess_gif.gif"/>' >
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link navbar-brand" href="/">Formulário</a>
+			<li class="nav-item active"><a class="nav-link navbar-brand" href="/">Formulario</a>
 			</li>
-			<li class="nav-item"><a class="nav-link navbar-brand" href="/relatorio">Relatório</a>
+			<li class="nav-item"><a class="nav-link navbar-brand" href="/relatorio">Relatorio</a>
 			</li>
 		</ul>
 		<a class="navbar-left"> <a class="navbar-brand"
-			style="color: white">Bem Vindo(a): <sec:authentication
-					property="principal.username" /></a> <img class="box horario"
+			style="color: white"></a> <img class="box horario"
 			src='<c:url value="images/qintess.png"/>' style="width: 55px;">
 		</a>
 	</nav>

@@ -3,7 +3,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +19,7 @@
 	href='<spring:url value="https://fonts.googleapis.com/icon?family=Material+Icons"/>'>
 	<link rel="stylesheet" href='<spring:url value="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />' integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-<title>Relatório</title>
+<title>Relatï¿½rio</title>
 </head>
 <body>
 	<jsp:include page="navbar.jsp"></jsp:include>
@@ -28,7 +27,7 @@
 	<div class="container">
 		<div id="toolbar" class="select">
 			<select class="form-control">
-				<option value="">Exportar básico</option>
+				<option value="">Exportar bï¿½sico</option>
 				<option value="all">Exportar tudo</option>
 				<option value="selected">Selecionar o que deseja exportar</option>
 			</select>
@@ -47,7 +46,7 @@
 						<th colspan="1" rowspan="2" data-field="nome"
 						style="text-align: center">Nome</th>
 					<th colspan="2" style="text-align: center">Conhecimentos</th>
-					<th colspan="7" style="text-align: center">Formação</th>
+					<th colspan="7" style="text-align: center">Formaï¿½ï¿½o</th>
 					<th colspan="3" style="text-align: center">Filhos</th>
 					<th colspan="4" style="text-align: center">Interesse em
 						Aprender</th>
@@ -61,23 +60,23 @@
 						data-detail-formatter="outras_tecDetailFormatter">Outras
 						Tecnologias</th>
 					<th data-field="formacao"
-						data-detail-formatter="formacaoDetailFormatter">Formação
-						Acadêmica</th>
+						data-detail-formatter="formacaoDetailFormatter">Formaï¿½ï¿½o
+						Acadï¿½mica</th>
 					<th colspan="auto" data-field="certificacao" data-visible="false"
-						data-detail-formatter="certificacaoDetailFormatter">Certificações</th>
+						data-detail-formatter="certificacaoDetailFormatter">Certificaï¿½ï¿½es</th>
 					<th data-field="experiencia"
 						data-detail-formatter="experienciaDetailFormatter">Tempo de
-						Experiência</th>
+						Experiï¿½ncia</th>
 					<th colspan="auto" data-field="idiomas"
 						data-detail-formatter="idiomasDetailFormatter">Idiomas</th>
 					<th colspan="auto" data-field="restricoes" data-visible="false"
-						data-detail-formatter="restricoesDetailFormatter">Restrições
+						data-detail-formatter="restricoesDetailFormatter">Restriï¿½ï¿½es
 						Local</th>
 					<th colspan="auto" data-field="beneficios" data-visible="false"
-						data-detail-formatter="restricoesDetailFormatter">Benefícios</th>
+						data-detail-formatter="restricoesDetailFormatter">Benefï¿½cios</th>
 					<th colspan="auto" data-field="interesse_area" data-visible="false"
 						data-detail-formatter="restricoesDetailFormatter">Interesse
-						em outra área</th>
+						em outra ï¿½rea</th>
 					<th data-field="possui_filhos" data-visible="false"
 						data-detail-formatter="possui_filhosDetailFormatter">Possui
 						filhos</th>
@@ -189,21 +188,21 @@
 						data-detail-formatter="outras_tecDetailFormatter">Outras
 						Tecnologias</th>
 					<th data-field="formacao"
-						data-detail-formatter="formacaoDetailFormatter">Formação
-						Acadêmica</th>
+						data-detail-formatter="formacaoDetailFormatter">Formaï¿½ï¿½o
+						Acadï¿½mica</th>
 					<th colspan="auto" data-field="certificacao"
-						data-detail-formatter="certificacaoDetailFormatter">Certificações</th>
+						data-detail-formatter="certificacaoDetailFormatter">Certificaï¿½ï¿½es</th>
 					<th data-field="experiencia"
 						data-detail-formatter="experienciaDetailFormatter">Tempo Exp</th>
 					<th colspan="auto" data-field="idiomas"
 						data-detail-formatter="idiomasDetailFormatter">Idiomas</th>
 					<th colspan="auto" data-field="restricoes"
-						data-detail-formatter="restricoesDetailFormatter">Restrições
+						data-detail-formatter="restricoesDetailFormatter">Restriï¿½ï¿½es
 						Local</th>
 					<th colspan="auto" data-field="beneficios"
-						data-detail-formatter="restricoesDetailFormatter">Benefícios</th>
+						data-detail-formatter="restricoesDetailFormatter">Benefï¿½cios</th>
 					<th colspan="auto" data-field="beneficios"
-						data-detail-formatter="restricoesDetailFormatter">Área</th>
+						data-detail-formatter="restricoesDetailFormatter">ï¿½rea</th>
 					<th data-field="possui_filhos"
 						data-detail-formatter="possui_filhosDetailFormatter">Filhos</th>
 					<th data-field="qtd_filhos"

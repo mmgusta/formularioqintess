@@ -3,7 +3,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <!doctype html>
 <html lang=pt-br">
 <head>
@@ -40,8 +39,7 @@
 	<br>
 	<form action="${salva}" modelAttribute="usuario"
 		class="container theme-showcase" role="main" id="needs-validation">
-		<input style="visibility: hidden;" name="nome" value="<sec:authentication
-					property="principal.username" />">
+		<input style="visibility: hidden;" name="nome" value="" />
 		<div class="accordion" id="accordionExample">
 			<div class="card">
 				<div class="card-header" id="headingOne">
