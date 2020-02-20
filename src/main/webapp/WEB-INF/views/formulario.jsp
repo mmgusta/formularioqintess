@@ -45,6 +45,42 @@
 				<div class="card-header" id="headingOne">
 					<h2 class="mb-0">
 						<button class="btn btn-lg btn-link" id="conhecimentos"
+							type="button" data-toggle="collapse" data-target="#collapse0"
+							aria-expanded="true" aria-controls="collapse0">
+							<img src='<c:url value="images/expand-button.png"/>'
+								style="width: 32px;">
+						</button>
+						<label id="conheci" style="color: white">Pessoal</label>
+					</h2>
+				</div>
+				<div id="collapse0" class="collapse show"
+					aria-labelledby="collapse0" data-parent="#accordionExample">
+					<div class="card-body" style="background-color: #FFFFFF">
+						<div class="form-row">
+							<div class="col-md-6 mb-3">
+								<label for="validationCustom02">Nome:</label>
+								<div class="mb-3">
+									<input type="text" class="form-control" data-role="tagsinput"
+											id="nome" name="nome" />
+								</div>
+								<div class="invalid-feedback">*Campo obrigatório.</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="validationCustom02">Cliente:</label>
+								<div class="mb-3">
+									<input type="text" class="form-control" data-role="tagsinput"
+											id="cliente" name="cliente" />
+								</div>
+								<div class="invalid-feedback">*Campo obrigatório.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingOne">
+					<h2 class="mb-0">
+						<button class="btn btn-lg btn-link" id="conhecimentos"
 							type="button" data-toggle="collapse" data-target="#collapse1"
 							aria-expanded="true" aria-controls="collapse1">
 							<img src='<c:url value="images/expand-button.png"/>'
@@ -53,7 +89,7 @@
 						<label id="conheci" style="color: white">Profissional</label>
 					</h2>
 				</div>
-				<div id="collapse1" class="collapse show"
+				<div id="collapse1" class="collapse"
 					aria-labelledby="collapse1" data-parent="#accordionExample">
 					<div class="card-body" style="background-color: #FFFFFF">
 						<div class="form-row">

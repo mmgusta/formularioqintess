@@ -25,6 +25,9 @@ public class Usuario {
 	@Column(nullable = false)
 	private String nome;
 	
+	@Column(nullable = false)
+	private String cliente;
+
 	@Column(nullable = true)
 	private String principal_tec;
 	
@@ -101,6 +104,13 @@ public class Usuario {
 	private String expectativas;
 
 												/*Getters and Setters*/
+	public String getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
+	}
 	
 	public int getId() {
 		return id;
