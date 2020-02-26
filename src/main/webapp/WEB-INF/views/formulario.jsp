@@ -60,18 +60,57 @@
 							<div class="col-md-6 mb-3">
 								<label for="validationCustom02">Nome:</label>
 								<div class="mb-3">
-									<input type="text" class="form-control" data-role="tagsinput"
-											id="nome" name="nome" />
+									<input type="text" class="form-control" id="nome" name="nome" />
 								</div>
 								<div class="invalid-feedback">*Campo obrigatório.</div>
 							</div>
 							<div class="col-md-6 mb-3">
 								<label for="validationCustom02">Cliente:</label>
 								<div class="mb-3">
-									<input type="text" class="form-control" data-role="tagsinput"
-											id="cliente" name="cliente" />
+									<input type="text" class="form-control" id="cliente" name="cliente" />
 								</div>
 								<div class="invalid-feedback">*Campo obrigatório.</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-4 mb-3">
+								<label for="validationCustom02">Possui filhos ?</label>
+								<div class="mb-3">
+									<div class="selectpicker">
+										<select style="background-color: #e9ecef"
+											class="btn dropdown-toggle col-md-12" name="possui_filhos"
+											id="possui_filhos_select" required>
+											<option value="Não" selected>Não</option>
+											<option value="Sim">Sim</option>
+										</select>
+									</div>
+								</div>
+								<div class="invalid-feedback">*Campo obrigatório.</div>
+							</div>
+
+							<div class="col-md-4 mb-3" id="quantFilhosDiv">
+								<label for="quantFilhos">Quantidade de filhos:</label>
+								<div class="mb-3">
+									<input type="number" min="1" class="form-control"
+										id="quant_filhos_input" name="qtd_filhos" />
+								</div>
+								<div class="invalid-feedback">*Campo obrigatório.</div>
+							</div>
+
+							<div class="col-md-4 mb-3">
+								<label for="validationCustomUsername">Idade dos filhos:</label>
+								<div class="input-group">
+									<input type="text" class="form-control" data-role="tagsinput"
+										id="idade_filhos_input" name="idade_filhos" disabled />
+									<button type="button" class="btn btn-sm btn-link"
+										id="idade_filhos_btn" data-toggle="popover"
+										data-placement="top"
+										data-content="Após escrever, pressione ENTER para salvar"
+										disabled>
+										<i class="material-icons">help_outline</i>
+									</button>
+									<div class="invalid-feedback">*Campo obrigatório.</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -344,67 +383,6 @@
 										id="possui_certificados_input" name="certificacoes" disabled />
 									<button type="button" class="btn btn-sm btn-link"
 										id="possui_certificados_btn" data-toggle="popover"
-										data-placement="top"
-										data-content="Após escrever, pressione ENTER para salvar"
-										disabled>
-										<i class="material-icons">help_outline</i>
-									</button>
-									<div class="invalid-feedback">*Campo obrigatório.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="card-header" id="heading3">
-					<h2 class="mb-0">
-						<button class="btn btn-lg btn-link" id="conhecimentos"
-							type="button" data-toggle="collapse" data-target="#collapse3"
-							aria-expanded="true" aria-controls="collapse3">
-							<img src='<c:url value="images/expand-button.png"/>'
-								style="width: 32px;">
-						</button>
-						<label style="color: white">Pessoal</label>
-					</h2>
-				</div>
-
-				<div id="collapse3" class="collapse" aria-labelledby="heading3"
-					data-parent="#accordionExample">
-					<div class="card-body" style="background-color: #FFFFFF">
-						<div class="form-row">
-							<div class="col-md-4 mb-3">
-								<label for="validationCustom02">Possui filhos ?</label>
-								<div class="mb-3">
-									<div class="selectpicker">
-										<select style="background-color: #e9ecef"
-											class="btn dropdown-toggle col-md-12" name="possui_filhos"
-											id="possui_filhos_select" required>
-											<option value="Não" selected>Não</option>
-											<option value="Sim">Sim</option>
-										</select>
-									</div>
-								</div>
-								<div class="invalid-feedback">*Campo obrigatório.</div>
-							</div>
-
-							<div class="col-md-4 mb-3" id="quantFilhosDiv">
-								<label for="quantFilhos">Quantidade de filhos:</label>
-								<div class="mb-3">
-									<input type="number" min="1" class="form-control"
-										id="quant_filhos_input" name="qtd_filhos" />
-								</div>
-								<div class="invalid-feedback">*Campo obrigatório.</div>
-							</div>
-
-							<div class="col-md-4 mb-3">
-								<label for="validationCustomUsername">Idade dos filhos:</label>
-								<div class="input-group">
-									<input type="text" class="form-control" data-role="tagsinput"
-										id="idade_filhos_input" name="idade_filhos" disabled />
-									<button type="button" class="btn btn-sm btn-link"
-										id="idade_filhos_btn" data-toggle="popover"
 										data-placement="top"
 										data-content="Após escrever, pressione ENTER para salvar"
 										disabled>

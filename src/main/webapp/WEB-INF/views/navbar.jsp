@@ -15,14 +15,14 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm navbar-dark">
-		 <img class="logoimg"
+		<!--  <img class="logoimg"
 			src='<spring:url value="images/qintess_gif.gif"/>' >
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link navbar-brand" href="/">Formulario</a>
 			</li>
 			<li class="nav-item"><a class="nav-link navbar-brand" href="/relatorio">Relatorio</a>
 			</li>
-		</ul>
+		</ul> -->
 		<a class="navbar-left"> <a class="navbar-brand"
 			style="color: white"></a> <img class="box horario"
 			src='<c:url value="images/qintess.png"/>' style="width: 55px;">

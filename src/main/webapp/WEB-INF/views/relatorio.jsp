@@ -27,7 +27,7 @@
 	<div class="container">
 		<div id="toolbar" class="select">
 			<select class="form-control">
-				<option value="">Exportar bï¿½sico</option>
+				<option value="">Exportar básico</option>
 				<option value="all">Exportar tudo</option>
 				<option value="selected">Selecionar o que deseja exportar</option>
 			</select>
@@ -46,7 +46,7 @@
 						<th colspan="1" rowspan="2" data-field="nome"
 						style="text-align: center">Nome</th>
 					<th colspan="2" style="text-align: center">Conhecimentos</th>
-					<th colspan="7" style="text-align: center">Formaï¿½ï¿½o</th>
+					<th colspan="7" style="text-align: center">Formação</th>
 					<th colspan="3" style="text-align: center">Filhos</th>
 					<th colspan="4" style="text-align: center">Interesse em
 						Aprender</th>
@@ -60,23 +60,23 @@
 						data-detail-formatter="outras_tecDetailFormatter">Outras
 						Tecnologias</th>
 					<th data-field="formacao"
-						data-detail-formatter="formacaoDetailFormatter">Formaï¿½ï¿½o
-						Acadï¿½mica</th>
+						data-detail-formatter="formacaoDetailFormatter">Formação
+						Academica</th>
 					<th colspan="auto" data-field="certificacao" data-visible="false"
-						data-detail-formatter="certificacaoDetailFormatter">Certificaï¿½ï¿½es</th>
+						data-detail-formatter="certificacaoDetailFormatter">Certificações</th>
 					<th data-field="experiencia"
 						data-detail-formatter="experienciaDetailFormatter">Tempo de
-						Experiï¿½ncia</th>
+						Experiencia</th>
 					<th colspan="auto" data-field="idiomas"
 						data-detail-formatter="idiomasDetailFormatter">Idiomas</th>
 					<th colspan="auto" data-field="restricoes" data-visible="false"
-						data-detail-formatter="restricoesDetailFormatter">Restriï¿½ï¿½es
+						data-detail-formatter="restricoesDetailFormatter">Restrições
 						Local</th>
 					<th colspan="auto" data-field="beneficios" data-visible="false"
-						data-detail-formatter="restricoesDetailFormatter">Benefï¿½cios</th>
+						data-detail-formatter="restricoesDetailFormatter">Benefícios</th>
 					<th colspan="auto" data-field="interesse_area" data-visible="false"
 						data-detail-formatter="restricoesDetailFormatter">Interesse
-						em outra ï¿½rea</th>
+						em outra área</th>
 					<th data-field="possui_filhos" data-visible="false"
 						data-detail-formatter="possui_filhosDetailFormatter">Possui
 						filhos</th>
@@ -188,21 +188,21 @@
 						data-detail-formatter="outras_tecDetailFormatter">Outras
 						Tecnologias</th>
 					<th data-field="formacao"
-						data-detail-formatter="formacaoDetailFormatter">Formaï¿½ï¿½o
-						Acadï¿½mica</th>
+						data-detail-formatter="formacaoDetailFormatter">Formação
+						Academica</th>
 					<th colspan="auto" data-field="certificacao"
-						data-detail-formatter="certificacaoDetailFormatter">Certificaï¿½ï¿½es</th>
+						data-detail-formatter="certificacaoDetailFormatter">Certificações</th>
 					<th data-field="experiencia"
 						data-detail-formatter="experienciaDetailFormatter">Tempo Exp</th>
 					<th colspan="auto" data-field="idiomas"
 						data-detail-formatter="idiomasDetailFormatter">Idiomas</th>
 					<th colspan="auto" data-field="restricoes"
-						data-detail-formatter="restricoesDetailFormatter">Restriï¿½ï¿½es
+						data-detail-formatter="restricoesDetailFormatter">Restrições
 						Local</th>
 					<th colspan="auto" data-field="beneficios"
-						data-detail-formatter="restricoesDetailFormatter">Benefï¿½cios</th>
+						data-detail-formatter="restricoesDetailFormatter">Benefícios</th>
 					<th colspan="auto" data-field="beneficios"
-						data-detail-formatter="restricoesDetailFormatter">ï¿½rea</th>
+						data-detail-formatter="restricoesDetailFormatter">Área</th>
 					<th data-field="possui_filhos"
 						data-detail-formatter="possui_filhosDetailFormatter">Filhos</th>
 					<th data-field="qtd_filhos"

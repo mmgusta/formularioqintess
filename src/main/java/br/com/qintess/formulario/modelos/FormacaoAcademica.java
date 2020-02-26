@@ -15,6 +15,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "formacao")
 public class FormacaoAcademica {
+	
+	public FormacaoAcademica() {}
+	
+	public FormacaoAcademica(int id, String nome) {
+		this.id = id;
+		this.nome = nome;
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
