@@ -73,6 +73,19 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		
+		<!-- Switch back from Spring Boot 2.x standard HikariCP to Tomcat JDBC, 
+			configured later in Heroku (see https://stackoverflow.com/a/49970142/4964553) -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
 		<dependency>
