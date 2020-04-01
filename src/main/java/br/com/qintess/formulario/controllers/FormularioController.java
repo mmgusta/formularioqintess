@@ -18,6 +18,7 @@ import br.com.qintess.formulario.dao.OffTopicDao;
 import br.com.qintess.formulario.dao.UsuarioDao;
 import br.com.qintess.formulario.modelos.Comportamentais;
 import br.com.qintess.formulario.modelos.FormacaoAcademica;
+import br.com.qintess.formulario.modelos.Idioma;
 import br.com.qintess.formulario.modelos.OffTopic;
 import br.com.qintess.formulario.modelos.Usuario;
 
@@ -61,10 +62,33 @@ public class FormularioController {
 		return formacoes;
 	}
 	
+	private List<Idioma> retornaIdiomas() {
+		
+		List<Idioma> idiomas = new ArrayList<>();
+		
+		Idioma i1 = new Idioma(1, "Inglês");
+		Idioma i2 = new Idioma(2, "Espanhol");
+		Idioma i3 = new Idioma(3, "Francês");
+		Idioma i4 = new Idioma(4, "Alemão");
+		Idioma i5 = new Idioma(5, "Chinês");
+		Idioma i6 = new Idioma(6, "Japonês");
+		Idioma i7 = new Idioma(7, "Outros");
+		
+		idiomas.add(i1);
+		idiomas.add(i2);
+		idiomas.add(i3);
+		idiomas.add(i4);
+		idiomas.add(i5);
+		idiomas.add(i6);
+		idiomas.add(i7);
+		
+		return idiomas;
+	}
+	
 	@RequestMapping("/")
 	public String carrega(Model model) {
 		model.addAttribute("formacoes", retornaFormacoes());
-		model.addAttribute("idiomas", idiomaDao.buscaIdiomaOrdenado());
+		model.addAttribute("idiomas", retornaIdiomas());
 		model.addAttribute("comportamentais", comportamentaisDao.buscaOrdenadoComportamentais());
 		model.addAttribute("offtopics", offTopicDao.buscaOrdenadoOffTopic());
 		model.addAttribute("usuario", new Usuario()); 

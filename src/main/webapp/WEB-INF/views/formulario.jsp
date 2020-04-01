@@ -73,6 +73,15 @@
 							</div>
 						</div>
 						<div class="form-row">
+							<div class="col-md-6 mb-3">
+								<label for="validationCustom02">E-mail:</label>
+								<div class="mb-3">
+									<input type="text" class="form-control" id="email" name="email" />
+								</div>
+								<div class="invalid-feedback">*Campo obrigatório.</div>
+							</div>
+						</div>
+						<div class="form-row">
 							<div class="col-md-4 mb-3">
 								<label for="validationCustom02">Possui filhos ?</label>
 								<div class="mb-3">
@@ -415,7 +424,7 @@
 					<div class="card-body" style="background-color: #FFFFFF">
 						<div class="form-row">
 							<div class="col-md-6 mb-3">
-								<label for="validationCustomUsername">Tecnologias que
+								<label for="validationCustomUsername">Assuntos que
 									deseja aprender:(Opcional)</label>
 								<div class="input-group">
 									<input type="text" class="form-control" data-role="tagsinput"
@@ -430,7 +439,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-6 mb-3">
+							<!-- <div class="col-md-6 mb-3">
 								<div class="form-group">
 									<label for="validationCustom03">Idiomas que deseja
 										aprender:(Opcional)</label>
@@ -446,10 +455,10 @@
 									</div>
 									<div class="invalid-feedback">*Campo obrigatório.</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 
-						<div class="form-row">
+						<!-- <div class="form-row">
 							<div class="col-md-6 mb-3">
 								<div class="form-group">
 									<label for="validationCustom03">Cursos comportamentais
@@ -484,7 +493,7 @@
 									<div class="invalid-feedback">*Campo obrigatório.</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -508,7 +517,7 @@
 					<div class="card-body" style="background-color: #FFFFFF">
 						<div class="form-row">
 							<div class="col-md-6 mb-3">
-								<label for="validationCustomUsername">Tecnologias que
+								<label for="validationCustomUsername">Assuntos que
 									deseja ensinar:(Opcional)</label>
 								<div class="input-group">
 									<input type="text" class="form-control" data-role="tagsinput"
@@ -522,7 +531,7 @@
 									<div class="invalid-feedback">*Campo obrigatório.</div>
 								</div>
 							</div>
-							<div class="col-md-6 mb-3">
+							<!-- <div class="col-md-6 mb-3">
 								<div class="form-group">
 									<label for="validationCustom03">Idiomas que deseja
 										ensinar:(Opcional)</label>
@@ -538,10 +547,10 @@
 									</div>
 									<div class="invalid-feedback">*Campo obrigatório.</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 
-						<div class="form-row">
+						<!-- <div class="form-row">
 							<div class="col-md-6 mb-3">
 								<div class="form-group">
 									<label for="validationCustom03">Cursos comportamentais
@@ -575,7 +584,7 @@
 									<div class="invalid-feedback">*Campo obrigatório.</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

@@ -21,6 +21,13 @@ public class Idioma {
 	
 	@ManyToMany(mappedBy = "idiomas")
 	private List<Usuario> usuarios_falam;
+	
+	public Idioma() {}
+	
+	public Idioma(int id, String nome) {
+		this.id = id;
+		this.nome = nome;
+	}
 
 	public int getId() {
 		return id;

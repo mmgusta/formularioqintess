@@ -26,6 +26,9 @@ public class Usuario {
 	private String nome;
 	
 	@Column(nullable = false)
+	private String email;
+	
+	@Column(nullable = false)
 	private String cliente;
 
 	@Column(nullable = true)
@@ -67,32 +70,32 @@ public class Usuario {
 	@ElementCollection
 	private List<String> aprender_tec;
 
-	@ManyToMany
-	@JoinTable(name = "usuario_aprender_idiomas")
-	private List<Idioma> aprender_idioma;
-
-	@ManyToMany
-	@JoinTable(name = "usuario_aprender_comportamentais")
-	private List<Comportamentais> aprender_comportamental;
-
-	@ManyToMany
-	@JoinTable(name = "usuario_aprender_off_topics")
-	private List<OffTopic> aprender_off_topic;
+//	@ManyToMany
+//	@JoinTable(name = "usuario_aprender_idiomas")
+//	private List<Idioma> aprender_idioma;
+//
+//	@ManyToMany
+//	@JoinTable(name = "usuario_aprender_comportamentais")
+//	private List<Comportamentais> aprender_comportamental;
+//
+//	@ManyToMany
+//	@JoinTable(name = "usuario_aprender_off_topics")
+//	private List<OffTopic> aprender_off_topic;
 /**/
 	@ElementCollection
 	private List<String> ensinar_tec;
 
-	@ManyToMany
-	@JoinTable(name = "usuario_ensinar_idiomas")
-	private List<Idioma> ensinar_idioma;
-
-	@ManyToMany
-	@JoinTable(name = "usuario_ensinar_comportamentais")
-	private List<Comportamentais> ensinar_comportamental;
-
-	@ManyToMany
-	@JoinTable(name = "usuario_ensinar_off_topics")
-	private List<OffTopic> ensinar_off_topic;
+//	@ManyToMany
+//	@JoinTable(name = "usuario_ensinar_idiomas")
+//	private List<Idioma> ensinar_idioma;
+//
+//	@ManyToMany
+//	@JoinTable(name = "usuario_ensinar_comportamentais")
+//	private List<Comportamentais> ensinar_comportamental;
+//
+//	@ManyToMany
+//	@JoinTable(name = "usuario_ensinar_off_topics")
+//	private List<OffTopic> ensinar_off_topic;
 	
 	@ElementCollection
 	private List<String> beneficios;
@@ -225,29 +228,29 @@ public class Usuario {
 		this.aprender_tec = aprender_tec;
 	}
 
-	public List<Idioma> getAprender_idioma() {
-		return aprender_idioma;
-	}
-
-	public void setAprender_idioma(List<Idioma> aprender_idioma) {
-		this.aprender_idioma = aprender_idioma;
-	}
-
-	public List<Comportamentais> getAprender_comportamental() {
-		return aprender_comportamental;
-	}
-
-	public void setAprender_comportamental(List<Comportamentais> aprender_comportamental) {
-		this.aprender_comportamental = aprender_comportamental;
-	}
-
-	public List<OffTopic> getAprender_off_topic() {
-		return aprender_off_topic;
-	}
-
-	public void setAprender_off_topic(List<OffTopic> aprender_off_topic) {
-		this.aprender_off_topic = aprender_off_topic;
-	}
+//	public List<Idioma> getAprender_idioma() {
+//		return aprender_idioma;
+//	}
+//
+//	public void setAprender_idioma(List<Idioma> aprender_idioma) {
+//		this.aprender_idioma = aprender_idioma;
+//	}
+//
+//	public List<Comportamentais> getAprender_comportamental() {
+//		return aprender_comportamental;
+//	}
+//
+//	public void setAprender_comportamental(List<Comportamentais> aprender_comportamental) {
+//		this.aprender_comportamental = aprender_comportamental;
+//	}
+//
+//	public List<OffTopic> getAprender_off_topic() {
+//		return aprender_off_topic;
+//	}
+//
+//	public void setAprender_off_topic(List<OffTopic> aprender_off_topic) {
+//		this.aprender_off_topic = aprender_off_topic;
+//	}
 
 	public List<String> getEnsinar_tec() {
 		return ensinar_tec;
@@ -257,29 +260,29 @@ public class Usuario {
 		this.ensinar_tec = ensinar_tec;
 	}
 
-	public List<Idioma> getEnsinar_idioma() {
-		return ensinar_idioma;
-	}
-
-	public void setEnsinar_idioma(List<Idioma> ensinar_idioma) {
-		this.ensinar_idioma = ensinar_idioma;
-	}
-
-	public List<Comportamentais> getEnsinar_comportamental() {
-		return ensinar_comportamental;
-	}
-
-	public void setEnsinar_comportamental(List<Comportamentais> ensinar_comportamental) {
-		this.ensinar_comportamental = ensinar_comportamental;
-	}
-
-	public List<OffTopic> getEnsinar_off_topic() {
-		return ensinar_off_topic;
-	}
-
-	public void setEnsinar_off_topic(List<OffTopic> ensinar_off_topic) {
-		this.ensinar_off_topic = ensinar_off_topic;
-	}
+//	public List<Idioma> getEnsinar_idioma() {
+//		return ensinar_idioma;
+//	}
+//
+//	public void setEnsinar_idioma(List<Idioma> ensinar_idioma) {
+//		this.ensinar_idioma = ensinar_idioma;
+//	}
+//
+//	public List<Comportamentais> getEnsinar_comportamental() {
+//		return ensinar_comportamental;
+//	}
+//
+//	public void setEnsinar_comportamental(List<Comportamentais> ensinar_comportamental) {
+//		this.ensinar_comportamental = ensinar_comportamental;
+//	}
+//
+//	public List<OffTopic> getEnsinar_off_topic() {
+//		return ensinar_off_topic;
+//	}
+//
+//	public void setEnsinar_off_topic(List<OffTopic> ensinar_off_topic) {
+//		this.ensinar_off_topic = ensinar_off_topic;
+//	}
 
 	public List<String> getBeneficios() {
 		return beneficios;
@@ -303,6 +306,14 @@ public class Usuario {
 
 	public void setInteresse_outra_area(List<String> interesse_outra_area) {
 		this.interesse_outra_area = interesse_outra_area;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }
