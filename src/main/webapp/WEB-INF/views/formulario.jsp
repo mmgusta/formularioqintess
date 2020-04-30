@@ -591,6 +591,7 @@
 		</div>
 
 		<div class="col-md-12 mb-3">
+			<a href="docs/termo_consentimento.pdf" target="_blank">Visualizar termo de consentimento</a>
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" value=""
 					id="concordoForm" required> <label class="form-check-label"
